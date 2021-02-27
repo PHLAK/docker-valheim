@@ -35,6 +35,26 @@ Then run the Valheim server:
 
 #### Optional 'docker run' Arguments
 
+ENV SERVER_NAME "My World"
+ENV SERVER_PASSWORD "secret"
+ENV SERVER_PORT 2456
+ENV WORLD_NAME "Valhalla"
+
+<dl>
+    <dt><code>-e SERVER_NAME="My world"</code></dt>
+    <dd>Set the name of your server. This will be the name that shows up in the community server browser.</dd>
+</dl>
+
+<dl>
+    <dt><code>-e SERVER_PASSWORD=secret</code></dt>
+    <dd>The server password.</dd>
+</dl>
+
+<dl>
+    <dt><code>-e WORLD_NAME=Valhalla</code></dt>
+    <dd>Set world name. This will be the name of the folder your world is saved in. Within the container you can find your worlds in the <code>/home/steam/.config/unity3d/IronGate/Valheim/worlds</code> folder</dd>
+</dl>
+
 <dl>
     <dt><code>-e TZ=America/Phoenix</code></dt>
     <dd>Set the timezone for your server. You can find your timezone in this <a href="https://goo.gl/uy1J6q">list of timezones</a>. Use the (case sensitive) value from the <code>TZ</code> column. If left unset, timezone will be UTC.</dd>
@@ -64,6 +84,11 @@ Troubleshooting
 For general help and support join our [GitHub Discussions](https://github.com/PHLAK/docker-valheim/discussions) or reach out on [Twitter](https://twitter.com/PHLAK).
 
 Please report bugs to the [GitHub Issue Tracker](https://github.com/PHLAK/docker-valheim/issues).
+
+Docker Compose
+--------------
+
+For quick and easy management via [Docker Compose](https://docs.docker.com/compose/) check out https://github.com/PHLAK/valheim-compose
 
 Copyright
 ---------
