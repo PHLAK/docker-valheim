@@ -65,6 +65,11 @@ ENV WORLD_NAME "Valhalla"
     <dd>Always restart the container regardless of the exit status, but do not start it on daemon startup if the container has been put to a stopped state before. See the Docker <a href="https://goo.gl/Y0dlDH">restart policies</a> for additional details.</dd>
 </dl>
 
+Docker Compose
+--------------
+
+For quick and easy management via [Docker Compose](https://docs.docker.com/compose/) check out https://github.com/PHLAK/valheim-compose
+
 Upgrading the Server
 --------------------
 
@@ -84,11 +89,6 @@ Troubleshooting
 For general help and support join our [GitHub Discussions](https://github.com/PHLAK/docker-valheim/discussions) or reach out on [Twitter](https://twitter.com/PHLAK).
 
 Please report bugs to the [GitHub Issue Tracker](https://github.com/PHLAK/docker-valheim/issues).
-
-Docker Compose
---------------
-
-For quick and easy management via [Docker Compose](https://docs.docker.com/compose/) check out https://github.com/PHLAK/valheim-compose
 
 Copyright
 ---------
